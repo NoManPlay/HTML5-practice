@@ -318,41 +318,7 @@
 	<script src="js/script.js"></script>
 	<script src=""></script>
 	<script>
-		wx.config({
-			appId: '{$signPackage.appId}',
-			timestamp: '{$signPackage.timestamp}',
-			nonceStr: '{$signPackage.nonceStr}',
-			signature: '{$signPackage.signature}',
-			jsApiList: [
-				'onMenuShareTimeline',
-				'onMenuShareAppMessage',
-				'onMenuShareQQ'
-			]
-		});
-		wx.ready(function () {
-			var share_title = 'title',
-				share_link = 'http://project.geek-in.cn/geekinService.php/Maeno/fy2016',
-				share_desc = 'description',
-				share_pic = 'http://project.geek-in.cn/Public/geekinService/Maeno/fy2016/img/share.jpg';
 
-			wx.onMenuShareTimeline({
-				title: share_title,
-				link: share_link,
-				imgUrl: share_pic,
-				success: function () {},
-				cancel: function () {}
-			});
-			wx.onMenuShareAppMessage({
-				title: share_title,
-				desc: share_desc,
-				link: share_link,
-				imgUrl: share_pic,
-				type: '',
-				dataUrl: '',
-				success: function () {},
-				cancel: function () {}
-			});
-		});
 	</script>
 </body>
 
