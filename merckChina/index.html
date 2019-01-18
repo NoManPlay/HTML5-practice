@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>默克中国2018弹性福利</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate-lib.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <audio id="bgm" src="sound/music.mp3" preload="auto" loop="loop" autoplay="autoplay"></audio>
+    <div id="wrapbox">
+        <!-- loading -->
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div class="progressWrap">
+                <div class="loadingProgress1 overlay"></div>
+                <div class="loadingProgress2 overlay"></div>
+            </div>
+            <div class="progressNum">100%</div>
+        </div>
+
+        <!-- 主页面 -->
+        <div class="page-container hidden">
+            <img src="img/music.png" class="musicicon musicplay" />
+            <div data-page="1" class="page p1 cur">
+                <div class="logo1"></div>
+                <div class="p1Wrap">
+                    <canvas class="ring opacity0 ring_anim" id="ring" width="865" height="478"></canvas>
+                    <div class="p1_title opacity0 p1_title_anim">
+                        <div class="heart heart_anim"></div>
+                    </div>
+                    <div class="family z2 opacity0 family_anim"></div>
+                    <div class="p1_text opacity0 p1_text_anim"></div>
+                    <div class="logo2 p1_logo2"></div>
+                </div>
+                <div class="arrowW1 opacity0 arrowW1_anim">
+                    <div class="arrow arrow_anim"></div>
+                </div>
+            </div>
+            <div data-page="2" class="page p2 ">
+                <div class="logo1"></div>
+                <div class="color_red opacity0">
+                    <div class="opacity0 p2_family"></div>
+                    <div class="opacity0 p2_title"></div>
+                    <div class="opacity0 p2_text"></div>
+                    <div class="opacity0 p2_heartW">
+                        <div class="p2_heart"></div>
+                    </div>
+                </div>
+                <div class="logo2 p2_logo2"></div>
+                <div class="arrowW2 opacity0">
+                    <div class="arrow arrow_anim"></div>
+                </div>
+            </div>
+            <div data-page="3" class="page p3 ">
+                <div class="logo1"></div>
+                <div class="iphone">
+                    <div class="opacity0 man_1"></div>
+                    <div class="opacity0 man_1_textW">
+                        <div class="man_1_textBg overlay"></div>
+                        <canvas class="man_1_text overlay" id="canvasText1" width="273" height="91"></canvas>
+                    </div>
+                    <div class="opacity0 woman_1"></div>
+                    <div class="opacity0 woman_1_textW">
+                        <div class="woman_1_textBg overlay"></div>
+                        <canvas class="woman_1_text overlay" id="canvasText2" width="274" height="134"></canvas>
+                    </div>
+                    <div class="opacity0 man_2"></div>
+                    <div class="opacity0 man_2_textW">
+                        <div class="man_2_textBg overlay"></div>
+                        <canvas class="man_2_text overlay" id="canvasText3" width="273" height="91"></canvas>
+                    </div>
+                    <div class="opacity0 woman_2"></div>
+                    <div class="opacity0 woman_2_textW">
+                        <div class="woman_2_textBg overlay"></div>
+                        <canvas class="woman_2_text overlay" id="canvasText4" width="274" height="94"></canvas>
+                    </div>
+                </div>
+                <div class="arrowW3 opacity0">
+                    <div class="arrow arrow_anim"></div>
+                </div>
+            </div>
+            <div data-page="4" class="page p4 ">
+                <div class="logo1"></div>
+                <div class="cloud1 opacity0"></div>
+                <div class="cloud2 opacity0"></div>
+                <div class="road z2 opacity0">
+                    <div class="person person1 opacity0">
+                        <div class="person1P overlay z2"></div>
+                        <div class="per1Icon per1Icon_anim"></div>
+                    </div>
+                    <div class="car car1" data="1">
+                        <div class="opacity0 blueCar overlay"></div>
+                        <div class="opacity0 blueLight overlay"></div>
+                    </div>
+                    <div class="person person2 opacity0">
+                        <div class="person2P overlay z2"></div>
+                        <div class="per2Icon1 per2Icon1_anim"></div>
+                        <div class="per2Icon2 per2Icon2_anim"></div>
+
+                    </div>
+                    <div class="car car2" data="2">
+                        <div class="opacity0 pinkCar overlay"></div>
+                        <div class="opacity0 pinkLight overlay"></div>
+                    </div>
+                    <div class="person person3 opacity0">
+                        <div class="person3P overlay z2"></div>
+                        <div class="per3Icon1 per3Icon1_anim z3"></div>
+                        <div class="per3Icon2 per3Icon2_anim"></div>
+                    </div>
+                    <div class="car car3" data="3">
+                        <div class="opacity0 greenCar overlay"></div>
+                        <div class="opacity0 greenLight overlay"></div>
+                    </div>
+                    <div class="person person4 opacity0">
+                        <div class="person4P overlay z2"></div>
+                        <div class="per4Icon per4Icon1_anim"></div>
+                    </div>
+                    <div class="car car4" data="4">
+                        <div class="opacity0 redCar overlay"></div>
+                        <div class="opacity0 redLight overlay"></div>
+                    </div>
+                    <div class="carDemo"></div>
+                    <div class="cloud3 opacity0"></div>
+                    <div class="cloud4 opacity0"></div>
+                </div>
+                <div class="overlay carPost car1Post z2 invisible">
+                    <div class="clearBtn"></div>
+                    <div class="car1Explain"></div>
+                    <div class="explainBottom car1Bottom"></div>
+                </div>
+                <div class="overlay carPost car2Post z2 invisible">
+                    <div class="clearBtn"></div>
+                    <div class="car2Explain"></div>
+                    <div class="explainBottom car2Bottom"></div>
+                </div>
+                <div class="overlay carPost car3Post z2 invisible">
+                    <div class="clearBtn"></div>
+                    <div class="car3Explain"></div>
+                    <div class="explainBottom car3Bottom"></div>
+                </div>
+                <div class="overlay carPost car4Post z2 invisible">
+                    <div class="clearBtn"></div>
+                    <div class="car4Explain"></div>
+                    <div class="explainBottom car4Bottom"></div>
+                </div>
+                <div class="arrowW4 opacity0">
+                    <div class="arrow z2 arrow_anim"></div>
+                </div>
+            </div>
+            <div data-page="5" class="page p5 ">
+                <div class="logo1"></div>
+                <div class="p5Wrap">
+                    <div class="opacity0 p5_title"></div>
+                    <div class="opacity0 p5_text"></div>
+                    <div class="p5_container">
+                        <div class="container overlay">
+                            <div class="opacity0 container_title"></div>
+                            <div class="opacity0 container_data"></div>
+                            <div class="opacity0 container_timeW">
+                                <div class="container_time"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo2 p5_logo2"></div>
+                </div>
+                <div class="arrowW5 opacity0">
+                    <div class="arrow arrow_anim"></div>
+                </div>
+            </div>
+            <div data-page="6" class="page p6 ">
+                <div class="logo1"></div>
+                <div class="p6Wrap">
+                    <div class="p6_title opacity0"></div>
+                    <div class="p6_left z2">
+                        <div class="opacity0 p6_prize_text"></div>
+                        <div class="opacity0 p6_prize_title"></div>
+                        <div class="opacity0 p6_prize_text_1"></div>
+                        <div class="opacity0 p6_prize_title_1"></div>
+                    </div>
+                    <div class="p6_right z2">
+                        <div class="p6_prizeW opacity0">
+                            <div class="p6_prize"></div>
+                        </div>
+                        <div class="p6_prize_1W opacity0">
+                            <div class="p6_prize_1"></div>
+                        </div>
+                    </div>
+                    <canvas class="fire" id="fire" width="500" height="500"></canvas>
+                    <canvas class="gift z3 opacity0" id="gift" width="311" height="193"></canvas>
+                    <div class="logo2 p6_logo2"></div>
+                    <div class="p6_footer"></div>
+                </div>
+                <div class="arrowW6 opacity0">
+                    <div class="arrow arrow_anim"></div>
+                </div>
+            </div>
+            <div data-page="7" class="page p7 ">
+                <div class="logo1"></div>
+                <div class="p7Wrap">
+                    <a href="http://www.jiafuhui.com/merck">
+                        <div class="p7_title">
+                            <canvas id="canvasTitle" width="650" height="87"></canvas>
+                        </div>
+                    </a>
+                    <div class="opacity0 p7_eye"></div>
+                    <div class="opacity0 p7_text"></div>
+                    <img src="img/page_7/p7_code.png" alt="" class="p7_code opacity0">
+                    <div class="opacity0 p7_heart"></div>
+                    <div class="opacity0 p7_emilW">
+                        <div class="p7_emil"></div>
+                    </div>
+                    <div class="p7_t p7_text1"></div>
+                    <div class="p7_t p7_text2"></div>
+                    <div class="logo2 p7_logo2"></div>
+                </div>
+                <div class="arrowW7 opacity0">
+                    <div class="arrow arrow_anim"></div>
+                </div>
+            </div>
+            <div data-page="8" class="page p8 ">
+                <div class="logo1"></div>
+                <div class="p8Wrap">
+                    <div class="opacity0 p8_title"></div>
+                    <div class="opacity0 p8_hotline"></div>
+                    <div class="opacity0 p8_emil"></div>
+                    <div class="opacity0 p8_details"></div>
+                    <div class="opacity0 p8_footer"></div>
+                    <div class="logo2 p8_logo2"></div>
+                </div>
+                <div class="arrowW8 opacity0">
+                    <div class="arrow arrow_anim"></div>
+                </div>
+            </div>
+            <div data-page="9" class="page p9 ">
+                <div class="logo1"></div>
+                <div class="p9Wrap">
+                    <div class="p9_heartW z3 opacity0">
+                        <div class="p9_heart"></div>
+                    </div>
+                    <canvas class="p9_ring opacity0" id="p9_ring" width="865" height="478"></canvas>
+                    <div class="p9_title z2 opacity0"></div>
+                    <canvas class="p9_family opacity0" id="p9_family" width="428" height="322"></canvas>
+                    <div class="logo2 p9_logo2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <style type="text/css">
+        @-webkit-keyframes rotation {
+            10% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+
+            50%,
+            60% {
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+            }
+
+            90% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+
+            100% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+        }
+
+        @keyframes rotation {
+            10% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+
+            50%,
+            60% {
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+            }
+
+            90% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+
+            100% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+        }
+
+        #orientLayer {
+            display: none;
+        }
+
+        @media screen and (min-aspect-ratio: 13/11) {
+            #orientLayer {
+                display: block;
+            }
+        }
+
+        .mod-orient-layer {
+            display: none;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #000;
+            z-index: 9997;
+        }
+
+        .mod-orient-layer__content {
+            position: absolute;
+            width: 100%;
+            top: 45%;
+            margin-top: -75px;
+            text-align: center;
+        }
+
+        .mod-orient-layer__icon-orient {
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAADaCAMAAABU68ovAAAAXVBMVEUAAAD29vb////x8fH////////x8fH5+fn29vby8vL////5+fn39/f6+vr////x8fH////////+/v7////09PT////x8fH39/f////////////////////x8fH///+WLTLGAAAAHXRSTlMAIpML+gb4ZhHWn1c2gvHBvq1uKJcC6k8b187lQ9yhhboAAAQYSURBVHja7d3blpowFIDhTUIAOchZDkre/zE7ycySrbUUpsRN2/1fzO18KzEqxEVgTiZNfgmmtxRc8iaR8HNe8x4BtjQePKayYCIoyBSgvNNE1AkNSHqZyLqk97EgUCCHBzZ5mkg7ScvIJuIyOyXBRFxgpqWZyGsAZLB1KjsJi8nutHU4JCRbFRH8tmirI9k8Jx2sqNs8K/m0LQkrktO2crgcgXGB4AiTEsB0hJfo9MGgX7CGcYiYwQxmMOOvZwRhBG8tCoMXjBDeXvWCEcHbi14wgCBmMIMZzGAGM5jxETNwzMAxA8cMHDNwzMAxA8cMHDNwzMAxA8cMHDNwzMAxY6E2rUQxnH2tz9cirlJFwFBJedaPnUv0M7++egPDE8iAJcIDmxwH5wwv9vUviw2kLbVO3TJU5uul/EyB0FoLp4x60PdGUd3qPurrWyjGGTc05u+1dcgI7/+tCCPARWGhH7o5Y7RCf+bH9ctXLp6v2BVDxfqz0oPXeSVaNtINo/1SXDv4dck8IIkbhtC2ol+iouEonTBCbYvVMnXOjxww6s/RFrBUpXHh/gw1rHj5d/qhYn9Gpk2FWh6xRBRX5Oj3Znh2Sq49/L6+y8pB26q9GbE2dbA2mVbx6I+7MfBglLCttm73ZQi7AD3iL4HqjFYJHSPRppqaUaJ3ATpGa+ckpGak2hRRMyqjGMkvl+xyFeSMwjAqcsZgGDdyhl0oNTnDN4yenJGZFGxNChP5/Y3efh6SM2rDOJMzboYxkDMqwyjIGcIw6F+io2FU1IxIm1JqRmgXSkvNKNCXeTpGrU0JNSO2c6LIGPgCS8AuDHz9ta0SXWDtxoDRH+MqlbC2Dt2G2JFRadtQZt2qq/orGowdGb2euxYiqWEpVWhTBnszoNAPdStuQwxqf0aocdWKW4Z+DfszIh8pxJqbuCE4YAC+4bm0evtipjpgJHeFnyyt1Ku2xa0bhjxr27p75rECNwyI9ZwvXkHq+7aTaMEV44YYy/spfgjgjNHaWW+GeUhGEX7tLlVinIFDDSgnOwhi1V6bU0b6tVS9eAERe863g4dRrtiHdc6o+nn5vtyVVgR79Cqt4uL6gfHPQyGqtP2vf7HADGbcYwaOGThm4JiBYwaOGThm4JiBYwaOGThm4JiBYwaOGThm4JiBYwaOGThm4JjhtOM+J/AgT008yDMkN/dPP9hzS8zAMQN3OEYeekp5YU7KOKXwVXqiY+QS7smcinGKABWdiBgpPJTSMHJ4KidhhPBUSMLw4CmPhKHgKUXCkHsygum71ftNSgCX6bsl8FQyfbcL5EdYsDk0R3j7aiA5wpt5AjKg/2gLJEBD/0Hf2OOf/vRrj6z/7GtP4B3nMKyjHA12kIPSjnJs3FEO0TvKkYJHOWCR+rjJH0Vn6fI5PjNbAAAAAElFTkSuQmCC");
+            display: inline-block;
+            width: 67px;
+            height: 109px;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -webkit-animation: rotation infinite 1.5s ease-in-out;
+            animation: rotation infinite 1.5s ease-in-out;
+            -webkit-background-size: 67px;
+            background-size: 67px;
+        }
+
+        .mod-orient-layer__desc {
+            margin-top: 20px;
+            font-size: 15px;
+            color: #fff;
+        }
+    </style>
+    <div id="orientLayer" class="mod-orient-layer">
+        <div class="mod-orient-layer__content">
+            <i class="icon mod-orient-layer__icon-orient"></i>
+            <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+        </div>
+    </div>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/pxloader-all.min.js"></script>
+    <script src="js/resizeDiv.js"></script>
+    <script src="js/canvasSeque.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
