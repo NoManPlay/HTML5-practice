@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>营销节大数据</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate-lib.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	<audio id="bgm" src="sound/music.mp3" preload="auto" loop="loop" autoplay="autoplay"></audio>
+
+	<!-- loading -->
+	<div class="loading-container">
+		<div class="loading-wrap">
+			<img src="img/share.jpg" style="width:0px; height:0px; overflow:hidden;z-index: 0;padding:0;margin:0;position:absolute;" />
+			<img src="img/loading.gif" class="loading_icon" />
+			<span id="loading_inner">0%</span>
+		</div>
+		<p>正在努力加载...</p>
+	</div>
+
+	<!-- 主页面 -->
+	<div class="page-container hidden">
+		<div data-page="1" class="page p1 cur">
+			<div class="p1_logo opacity0"></div>
+			<div class="p1_t1 opacity0"></div>
+			<div class="p1_icon1 opacity0"></div>
+			<div class="p1_icon2 opacity0"></div>
+			<div class="p1_shadow opacity0">
+				<div class="p1_t2"></div>
+			</div>
+			<div class="p1_superman z1 opacity0"></div>
+			<div class="arrow z9 arrow_anim"></div>
+		</div>
+		<div data-page="2" class="page p2 ">
+			<div class="p2_p_wrap">
+				<div class="overlay p2_p1 opacity0"></div>
+				<div class="overlay p2_p2 opacity0"></div>
+				<div class="overlay p2_p3 opacity0"></div>
+				<div class="overlay p2_p4 opacity0"></div>
+				<div class="overlay p2_p5 opacity0"></div>
+				<div class="overlay p2_p6 opacity0"></div>
+				<div class="overlay p2_p7 opacity0"></div>
+				<div class="overlay p2_p8 opacity0"></div>
+				<div class="overlay p2_p9 opacity0"></div>
+				<div class="overlay p2_p10 opacity0"></div>
+				<div class="overlay p2_p11 opacity0"></div>
+				<div class="overlay p2_p12 opacity0"></div>
+				<div class="overlay p2_p13 opacity0"></div>
+				<div class="overlay p2_p14 opacity0"></div>
+				<div class="overlay p2_p15 opacity0"></div>
+				<div class="overlay p2_p16 opacity0"></div>
+				<div class="overlay p2_p17 opacity0"></div>
+				<div class="overlay p2_p18 opacity0"></div>
+			</div>
+			<div class="p2_t1 opacity0"></div>
+			<div class="p2_t2 opacity0"></div>
+			<div class="p2_t3 opacity0"></div>
+			<div class="p2_t4 opacity0"></div>
+			<div class="p2_t5 opacity0"></div>
+			<div class="p2_t6 opacity0"></div>
+			<div class="p2_t7 opacity0"></div>
+			<div class="arrow z9 arrow_anim"></div>
+		</div>
+		<div data-page="3" class="page p3 ">
+			<div class="p3_p_wrap">
+				<div class="p3_p1 opacity0"></div>
+				<div class="p3_p2 opacity0"></div>
+				<div class="p3_p3 opacity0"></div>
+				<div class="p3_p4 opacity0"></div>
+				<div class="p3_p5 opacity0"></div>
+				<div class="p3_p6 opacity0"></div>
+			</div>
+			<div class="p3_t1 opacity0"></div>
+			<div class="p3_t2"></div>
+			<div class="p3_t3"></div>
+			<div class="arrow z9 arrow_anim"></div>
+		</div>
+		<div data-page="4" class="page p4 ">
+			<div class="p4_p_wrap">
+				<div class="overlay p4_p1 opacity0"></div>
+				<div class="overlay p4_p2 opacity0"></div>
+				<div class="overlay p4_p3 opacity0"></div>
+				<div class="overlay p4_p4 opacity0"></div>
+				<div class="overlay p4_p5 opacity0"></div>
+				<div class="overlay p4_p6 opacity0"></div>
+				<div class="overlay p4_p7 opacity0"></div>
+				<div class="overlay p4_p8 opacity0"></div>
+				<div class="overlay p4_p9 opacity0"></div>
+				<div class="overlay p4_p10 opacity0"></div>
+				<div class="overlay p4_p11 opacity0"></div>
+				<div class="overlay p4_p12 opacity0"></div>
+			</div>
+			<div class="p4_t1 opacity0"></div>
+			<div class="p4_t2 opacity0"></div>
+			<div class="p4_t3 opacity0"></div>
+			<div class="p4_t4 opacity0"></div>
+			<div class="arrow z9 arrow_anim"></div>
+		</div>
+		<div data-page="5" class="page p5 ">
+			<div class="p5_p_wrap">
+				<div class="overlay p5_p1 opacity0"></div>
+				<div class="overlay p5_p2 opacity0"></div>
+				<div class="overlay p5_p3 opacity0"></div>
+				<div class="overlay p5_p4 opacity0"></div>
+				<div class="overlay p5_p5 opacity0"></div>
+				<div class="overlay p5_p6 opacity0"></div>
+			</div>
+			<div class="p5_t1 opacity0"></div>
+			<div class="p5_t2 opacity0"></div>
+			<div class="p5_t3 opacity0"></div>
+			<div class="arrow z9 arrow_anim"></div>
+		</div>
+		<div data-page="6" class="page p6 ">
+			<div class="p6_p_wrap">
+				<div class="overlay p6_p1 opacity0"></div>
+				<div class="overlay p6_p2 opacity0"></div>
+				<div class="overlay p6_p3 opacity0"></div>
+				<div class="overlay p6_p4 opacity0"></div>
+				<div class="overlay p6_p5 opacity0"></div>
+				<div class="overlay p6_p6 opacity0"></div>
+				<div class="overlay p6_p7 opacity0"></div>
+				<div class="overlay p6_p8 opacity0"></div>
+				<div class="overlay p6_p9 opacity0"></div>
+				<div class="overlay p6_p10 opacity0"></div>
+				<div class="overlay p6_p11 opacity0"></div>
+				<div class="overlay p6_p12 opacity0"></div>
+				<div class="overlay p6_p13 opacity0"></div>
+				<div class="overlay p6_p14 opacity0"></div>
+				<div class="overlay p6_p15 opacity0"></div>
+				<div class="overlay p6_p16 opacity0"></div>
+			</div>
+			<div class="p6_t1 opacity0"></div>
+			<div class="p6_t2 opacity0"></div>
+			<div class="p6_t3 opacity0"></div>
+			<div class="arrow z9 arrow_anim"></div>
+		</div>
+		<div data-page="7" class="page p7 ">
+			<div class="p7_p_wrap">
+				<div class="p7_p1 z5 opacity0"></div>
+				<div class="p7_p2 z6 opacity0"></div>
+				<div class="p7_p3 z4 opacity0"></div>
+				<div class="p7_p4 z3 opacity0"></div>
+				<div class="p7_p5 z2 opacity0"></div>
+				<div class="p7_p6 z1 opacity0"></div>
+				<div class="p7_p7 z7 opacity0"></div>
+			</div>
+			<div class="p7_t1 opacity0"></div>
+			<div class="p7_t2 opacity0"></div>
+			<div class="p7_t3 opacity0"></div>
+			<div class="p7_t4 opacity0"></div>
+			<div class="p7_t5 opacity0"></div>
+			<div class="arrow z9 arrow_anim"></div>
+		</div>
+		<div data-page="8" class="page p8 ">
+			<div class="p8_p_wrap">
+				<div class="money1">
+					<div class="overlay p8_p1 opacity0"></div>
+					<div class="overlay p8_p2 opacity0"></div>
+					<div class="overlay p8_p3 opacity0"></div>
+					<div class="overlay p8_p4 opacity0"></div>
+					<div class="overlay p8_p5 opacity0"></div>
+					<div class="overlay p8_p6 opacity0"></div>
+				</div>
+				<div class="money2">
+					<div class="overlay p8_p1 opacity0"></div>
+					<div class="overlay p8_p2 opacity0"></div>
+					<div class="overlay p8_p3 opacity0"></div>
+					<div class="overlay p8_p4 opacity0"></div>
+					<div class="overlay p8_p5 opacity0"></div>
+					<div class="overlay p8_p6 opacity0"></div>
+				</div>
+			</div>
+			<div class="p8_t1 opacity0"></div>
+			<div class="p8_t2 opacity0"></div>
+			<div class="p8_t3 opacity0"></div>
+			<div class="arrow z9 arrow_anim"></div>
+		</div>
+		<div data-page="9" class="page p9 ">
+			<div class="p9_t1 opacity0"></div>
+			<div class="p9_t2 opacity0"></div>
+			<div class="p9_t3 opacity0"></div>
+			<div class="p9_t4 opacity0"></div>
+			<div class="p9_p1 opacity0"></div>
+			<div class="p9_p2 opacity0"></div>
+			<div class="arrow z9 arrow_anim"></div>
+		</div>
+		<div data-page="10" class="page p10 ">
+			<div class="p10_p_wrap">
+				<div class="p10_p1 z1 opacity0"></div>
+				<div class="p10_p2 z2 opacity0"></div>
+				<div class="p10_p3 z3 opacity0"></div>
+				<div class="p10_p4 z1 opacity0"></div>
+			</div>
+			<div class="p10_t1 opacity0"></div>
+			<div class="p10_t2 opacity0"></div>
+			<div class="p10_t3 opacity0"></div>
+			<div class="arrow z9 arrow_anim"></div>
+		</div>
+		<div data-page="11" class="page p11">
+			<div class="p11_p1 opacity0"></div>
+		</div>
+	</div>
+	<style type="text/css">
+		@-webkit-keyframes rotation {
+			10% {
+				transform: rotate(90deg);
+				-webkit-transform: rotate(90deg)
+			}
+
+			50%,
+			60% {
+				transform: rotate(0deg);
+				-webkit-transform: rotate(0deg)
+			}
+
+			90% {
+				transform: rotate(90deg);
+				-webkit-transform: rotate(90deg)
+			}
+
+			100% {
+				transform: rotate(90deg);
+				-webkit-transform: rotate(90deg)
+			}
+		}
+
+		@keyframes rotation {
+			10% {
+				transform: rotate(90deg);
+				-webkit-transform: rotate(90deg)
+			}
+
+			50%,
+			60% {
+				transform: rotate(0deg);
+				-webkit-transform: rotate(0deg)
+			}
+
+			90% {
+				transform: rotate(90deg);
+				-webkit-transform: rotate(90deg)
+			}
+
+			100% {
+				transform: rotate(90deg);
+				-webkit-transform: rotate(90deg)
+			}
+		}
+
+		#orientLayer {
+			display: none;
+		}
+
+		@media screen and (min-aspect-ratio: 13/11) {
+			#orientLayer {
+				display: block;
+			}
+		}
+
+		.mod-orient-layer {
+			display: none;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background: #000;
+			z-index: 9997
+		}
+
+		.mod-orient-layer__content {
+			position: absolute;
+			width: 100%;
+			top: 45%;
+			margin-top: -75px;
+			text-align: center
+		}
+
+		.mod-orient-layer__icon-orient {
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAADaCAMAAABU68ovAAAAXVBMVEUAAAD29vb////x8fH////////x8fH5+fn29vby8vL////5+fn39/f6+vr////x8fH////////+/v7////09PT////x8fH39/f////////////////////x8fH///+WLTLGAAAAHXRSTlMAIpML+gb4ZhHWn1c2gvHBvq1uKJcC6k8b187lQ9yhhboAAAQYSURBVHja7d3blpowFIDhTUIAOchZDkre/zE7ycySrbUUpsRN2/1fzO18KzEqxEVgTiZNfgmmtxRc8iaR8HNe8x4BtjQePKayYCIoyBSgvNNE1AkNSHqZyLqk97EgUCCHBzZ5mkg7ScvIJuIyOyXBRFxgpqWZyGsAZLB1KjsJi8nutHU4JCRbFRH8tmirI9k8Jx2sqNs8K/m0LQkrktO2crgcgXGB4AiTEsB0hJfo9MGgX7CGcYiYwQxmMOOvZwRhBG8tCoMXjBDeXvWCEcHbi14wgCBmMIMZzGAGM5jxETNwzMAxA8cMHDNwzMAxA8cMHDNwzMAxA8cMHDNwzMAxY6E2rUQxnH2tz9cirlJFwFBJedaPnUv0M7++egPDE8iAJcIDmxwH5wwv9vUviw2kLbVO3TJU5uul/EyB0FoLp4x60PdGUd3qPurrWyjGGTc05u+1dcgI7/+tCCPARWGhH7o5Y7RCf+bH9ctXLp6v2BVDxfqz0oPXeSVaNtINo/1SXDv4dck8IIkbhtC2ol+iouEonTBCbYvVMnXOjxww6s/RFrBUpXHh/gw1rHj5d/qhYn9Gpk2FWh6xRBRX5Oj3Znh2Sq49/L6+y8pB26q9GbE2dbA2mVbx6I+7MfBglLCttm73ZQi7AD3iL4HqjFYJHSPRppqaUaJ3ATpGa+ckpGak2hRRMyqjGMkvl+xyFeSMwjAqcsZgGDdyhl0oNTnDN4yenJGZFGxNChP5/Y3efh6SM2rDOJMzboYxkDMqwyjIGcIw6F+io2FU1IxIm1JqRmgXSkvNKNCXeTpGrU0JNSO2c6LIGPgCS8AuDHz9ta0SXWDtxoDRH+MqlbC2Dt2G2JFRadtQZt2qq/orGowdGb2euxYiqWEpVWhTBnszoNAPdStuQwxqf0aocdWKW4Z+DfszIh8pxJqbuCE4YAC+4bm0evtipjpgJHeFnyyt1Ku2xa0bhjxr27p75rECNwyI9ZwvXkHq+7aTaMEV44YYy/spfgjgjNHaWW+GeUhGEX7tLlVinIFDDSgnOwhi1V6bU0b6tVS9eAERe863g4dRrtiHdc6o+nn5vtyVVgR79Cqt4uL6gfHPQyGqtP2vf7HADGbcYwaOGThm4JiBYwaOGThm4JiBYwaOGThm4JiBYwaOGThm4JiBYwaOGThm4JjhtOM+J/AgT008yDMkN/dPP9hzS8zAMQN3OEYeekp5YU7KOKXwVXqiY+QS7smcinGKABWdiBgpPJTSMHJ4KidhhPBUSMLw4CmPhKHgKUXCkHsygum71ftNSgCX6bsl8FQyfbcL5EdYsDk0R3j7aiA5wpt5AjKg/2gLJEBD/0Hf2OOf/vRrj6z/7GtP4B3nMKyjHA12kIPSjnJs3FEO0TvKkYJHOWCR+rjJH0Vn6fI5PjNbAAAAAElFTkSuQmCC');
+			display: inline-block;
+			width: 67px;
+			height: 109px;
+			transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+			-webkit-animation: rotation infinite 1.5s ease-in-out;
+			animation: rotation infinite 1.5s ease-in-out;
+			-webkit-background-size: 67px;
+			background-size: 67px
+		}
+
+		.mod-orient-layer__desc {
+			margin-top: 20px;
+			font-size: 15px;
+			color: #fff
+		}
+	</style>
+	<div id="orientLayer" class="mod-orient-layer">
+		<div class="mod-orient-layer__content">
+			<i class="icon mod-orient-layer__icon-orient"></i>
+			<div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+		</div>
+	</div>
+
+	<script src="js/zepto.min.js"></script>
+	<script src="js/pxloader-all.min.js"></script>
+	<script src="js/resizeDiv.js"></script>
+	<script src="js/script.js"></script>
+	<script src=""></script>
+	<script>
+
+	</script>
+</body>
+
+</html>
